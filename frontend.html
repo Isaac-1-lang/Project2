@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button a:hover {
+            color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="student_names">Student Names:</label>
+        <input type="text" id="student_names" name="student_names" required>
+
+        <label for="student_email">Student Email:</label>
+        <input type="email" id="student_email" name="student_email" required>
+
+        <label for="class">Student Class:</label>
+        <input type="text" id="class" name="class" required>
+
+        <label for="phone-number">Student Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" placeholder="Please enter your message here!" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
